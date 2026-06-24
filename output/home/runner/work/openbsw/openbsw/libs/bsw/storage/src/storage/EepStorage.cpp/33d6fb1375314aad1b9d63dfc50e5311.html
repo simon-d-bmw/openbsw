@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../storage.html">storage</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../storage.html">storage</a>
+            </li>
+
+        
+        <li class="active"><a href="../EepStorage.cpp.html">EepStorage.cpp</a>:60
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">storage::EepStorage::process(storage::StorageJob&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x000293e8</td>
+                <td>
+    
+    
+</td>
+                <td>64 (static)</td>
+                <td>460</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (2,
+                            <span title="sum of used bytes by all callees">
+                            Σ=744
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="./60b47a2f003c7197381655cebddda8bf.html">storage::EepStorage::read(storage::StorageJob&amp;, storage::EepBlockConfig const&amp;, unsigned int, etl::span&lt;unsigned char, 4294967295u&gt;) (292)</a>
+                    
+                        ,
+                    
+                
+                    <a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&amp;, storage::EepBlockConfig const&amp;, unsigned int, etl::span&lt;unsigned char, 4294967295u&gt;) (452)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./60b47a2f003c7197381655cebddda8bf.html">storage::EepStorage::read(storage::StorageJob&amp;, storage::EepBlockConfig const&amp;, unsigned int, etl::span&lt;unsigned char, 4294967295u&gt;) (292)</a></pre>
+    
+
+    <pre>
+
+    storage::EepStorage::process(storage::StorageJob&):
+
+       293e8:	b5f0      	push	{r4, r5, r6, r7, lr}
+
+       293ea:	6883      	ldr	r3, [r0, #8]
+
+    _ZNK7storage10StorageJob5getIdEv():
+
+       293ec:	6b0a      	ldr	r2, [r1, #48]	@ 0x30
+
+    storage::EepStorage::process(storage::StorageJob&):
+
+       293ee:	4293      	cmp	r3, r2
+
+       293f0:	b08b      	sub	sp, #44	@ 0x2c
+
+       293f2:	460c      	mov	r4, r1
+
+       293f4:	d954      	bls.n	294a0 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0xb8>
+
+       293f6:	6843      	ldr	r3, [r0, #4]
+
+       293f8:	eb03 03c2 	add.w	r3, r3, r2, lsl #3
+
+       293fc:	7999      	ldrb	r1, [r3, #6]
+
+       293fe:	2900      	cmp	r1, #0
+
+       29400:	d14c      	bne.n	2949c <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0xb4>
+
+       29402:	889a      	ldrh	r2, [r3, #4]
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       29404:	6907      	ldr	r7, [r0, #16]
+
+       29406:	6945      	ldr	r5, [r0, #20]
+
+    storage::EepStorage::process(storage::StorageJob&):
+
+       29408:	440a      	add	r2, r1
+
+    _ZNK3etl4spanIhLj4294967295EE4sizeEv():
+
+       2940a:	1bed      	subs	r5, r5, r7
+
+    storage::EepStorage::process(storage::StorageJob&):
+
+       2940c:	42aa      	cmp	r2, r5
+
+       2940e:	d847      	bhi.n	294a0 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0xb8>
+
+    _ZNK3etl7variantIJN7storage10StorageJob4Type4NoneENS3_5WriteENS3_4ReadEEE5indexEv():
+
+       29410:	6a66      	ldr	r6, [r4, #36]	@ 0x24
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4IS5_Li0EEEOT_():
+
+       29412:	4d67      	ldr	r5, [pc, #412]	@ (295b0 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x1c8>)
+
+       29414:	9505      	str	r5, [sp, #20]
+
+       29416:	f04f 0c01 	mov.w	ip, #1
+
+       2941a:	f8cd c018 	str.w	ip, [sp, #24]
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob4Type5WriteENS4_4NoneES5_JNS4_4ReadEEEENS_9enable_ifIXntsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       2941e:	b12e      	cbz	r6, 2942c <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x44>
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob4Type5WriteES5_NS4_4ReadEJEEENS_9enable_ifIXsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       29420:	2e01      	cmp	r6, #1
+
+    _ZNK3etl4spanIhLj4294967295EE5firstEj():
+
+       29422:	443a      	add	r2, r7
+
+    _ZN3etl15private_variant15is_same_type_inIN7storage10StorageJob4Type5WriteES5_NS4_4ReadEJEEENS_9enable_ifIXsrNS_7is_sameIT_T0_EE5valueEbE4typeEj():
+
+       29424:	f000 80a9 	beq.w	2957a <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x192>
+
+    storage::EepStorage::process(storage::StorageJob&):
+
+       29428:	2e02      	cmp	r6, #2
+
+       2942a:	d06d      	beq.n	29508 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x120>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSERKS8_():
+
+       2942c:	4b60      	ldr	r3, [pc, #384]	@ (295b0 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x1c8>)
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       2942e:	9508      	str	r5, [sp, #32]
+
+       29430:	f8cd c024 	str.w	ip, [sp, #36]	@ 0x24
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE22valueless_by_exceptionEv():
+
+       29434:	ad07      	add	r5, sp, #28
+
+       29436:	ae04      	add	r6, sp, #16
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       29438:	4632      	mov	r2, r6
+
+       2943a:	4629      	mov	r1, r5
+
+       2943c:	2000      	movs	r0, #0
+
+       2943e:	4798      	blx	r3
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSERKS8_():
+
+       29440:	6923      	ldr	r3, [r4, #16]
+
+       29442:	3301      	adds	r3, #1
+
+       29444:	d005      	beq.n	29452 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x6a>
+
+       29446:	68e3      	ldr	r3, [r4, #12]
+
+       29448:	2200      	movs	r2, #0
+
+       2944a:	f104 0108 	add.w	r1, r4, #8
+
+       2944e:	2002      	movs	r0, #2
+
+       29450:	4798      	blx	r3
+
+       29452:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+
+       29454:	3301      	adds	r3, #1
+
+       29456:	f000 8088 	beq.w	2956a <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x182>
+
+       2945a:	9b08      	ldr	r3, [sp, #32]
+
+       2945c:	60e3      	str	r3, [r4, #12]
+
+       2945e:	462a      	mov	r2, r5
+
+       29460:	f104 0108 	add.w	r1, r4, #8
+
+       29464:	2000      	movs	r0, #0
+
+       29466:	4798      	blx	r3
+
+    _ZNK3etl8delegateIFvRN7storage10StorageJobEEE8is_validEv():
+
+       29468:	6ae2      	ldr	r2, [r4, #44]	@ 0x2c
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSERKS8_():
+
+       2946a:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+
+       2946c:	6123      	str	r3, [r4, #16]
+
+    _ZN7storage10StorageJob10sendResultEN3etl7variantIJNS0_6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEE():
+
+       2946e:	b122      	cbz	r2, 2947a <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x92>
+
+    _ZNK3etl8delegateIFvRN7storage10StorageJobEEEclIJS3_EEEvDpOT_():
+
+       29470:	4621      	mov	r1, r4
+
+       29472:	f104 0028 	add.w	r0, r4, #40	@ 0x28
+
+       29476:	4790      	blx	r2
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE22valueless_by_exceptionEv():
+
+       29478:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEED4Ev():
+
+       2947a:	3301      	adds	r3, #1
+
+       2947c:	d004      	beq.n	29488 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0xa0>
+
+       2947e:	9b08      	ldr	r3, [sp, #32]
+
+       29480:	2200      	movs	r2, #0
+
+       29482:	4629      	mov	r1, r5
+
+       29484:	2002      	movs	r0, #2
+
+       29486:	4798      	blx	r3
+
+       29488:	9b06      	ldr	r3, [sp, #24]
+
+       2948a:	3301      	adds	r3, #1
+
+       2948c:	d004      	beq.n	29498 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0xb0>
+
+       2948e:	9b05      	ldr	r3, [sp, #20]
+
+       29490:	2200      	movs	r2, #0
+
+       29492:	a904      	add	r1, sp, #16
+
+       29494:	2002      	movs	r0, #2
+
+       29496:	4798      	blx	r3
+
+    storage::EepStorage::process(storage::StorageJob&):
+
+       29498:	b00b      	add	sp, #44	@ 0x2c
+
+       2949a:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+       2949c:	69c1      	ldr	r1, [r0, #28]
+
+       2949e:	e7b0      	b.n	29402 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x1a>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSERKS8_():
+
+       294a0:	6923      	ldr	r3, [r4, #16]
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4IS5_Li0EEEOT_():
+
+       294a2:	4d43      	ldr	r5, [pc, #268]	@ (295b0 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x1c8>)
+
+       294a4:	9508      	str	r5, [sp, #32]
+
+       294a6:	2201      	movs	r2, #1
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSERKS8_():
+
+       294a8:	3301      	adds	r3, #1
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4IS5_Li0EEEOT_():
+
+       294aa:	9209      	str	r2, [sp, #36]	@ 0x24
+
+    _ZN3etl20uninitialized_bufferILj1ELj1ELj1EEcvPT_IcEEv():
+
+       294ac:	f104 0608 	add.w	r6, r4, #8
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSERKS8_():
+
+       294b0:	d01a      	beq.n	294e8 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x100>
+
+       294b2:	68e3      	ldr	r3, [r4, #12]
+
+       294b4:	4631      	mov	r1, r6
+
+       294b6:	2200      	movs	r2, #0
+
+       294b8:	2002      	movs	r0, #2
+
+       294ba:	4798      	blx	r3
+
+       294bc:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+
+       294be:	1c59      	adds	r1, r3, #1
+
+       294c0:	d111      	bne.n	294e6 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0xfe>
+
+    _ZNK3etl8delegateIFvRN7storage10StorageJobEEE8is_validEv():
+
+       294c2:	6ae2      	ldr	r2, [r4, #44]	@ 0x2c
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSERKS8_():
+
+       294c4:	6123      	str	r3, [r4, #16]
+
+    _ZN7storage10StorageJob10sendResultEN3etl7variantIJNS0_6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEE():
+
+       294c6:	2a00      	cmp	r2, #0
+
+       294c8:	d0e6      	beq.n	29498 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0xb0>
+
+    _ZNK3etl8delegateIFvRN7storage10StorageJobEEEclIJS3_EEEvDpOT_():
+
+       294ca:	4621      	mov	r1, r4
+
+       294cc:	f104 0028 	add.w	r0, r4, #40	@ 0x28
+
+       294d0:	4790      	blx	r2
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE22valueless_by_exceptionEv():
+
+       294d2:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEED4Ev():
+
+       294d4:	3301      	adds	r3, #1
+
+       294d6:	d0df      	beq.n	29498 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0xb0>
+
+       294d8:	9b08      	ldr	r3, [sp, #32]
+
+       294da:	2200      	movs	r2, #0
+
+       294dc:	a907      	add	r1, sp, #28
+
+       294de:	2002      	movs	r0, #2
+
+       294e0:	4798      	blx	r3
+
+    storage::EepStorage::process(storage::StorageJob&):
+
+       294e2:	b00b      	add	sp, #44	@ 0x2c
+
+       294e4:	bdf0      	pop	{r4, r5, r6, r7, pc}
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSERKS8_():
+
+       294e6:	9d08      	ldr	r5, [sp, #32]
+
+       294e8:	60e5      	str	r5, [r4, #12]
+
+       294ea:	aa07      	add	r2, sp, #28
+
+       294ec:	4631      	mov	r1, r6
+
+       294ee:	2000      	movs	r0, #0
+
+       294f0:	47a8      	blx	r5
+
+    _ZNK3etl8delegateIFvRN7storage10StorageJobEEE8is_validEv():
+
+       294f2:	6ae2      	ldr	r2, [r4, #44]	@ 0x2c
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSERKS8_():
+
+       294f4:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+
+       294f6:	6123      	str	r3, [r4, #16]
+
+    _ZN7storage10StorageJob10sendResultEN3etl7variantIJNS0_6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEE():
+
+       294f8:	2a00      	cmp	r2, #0
+
+       294fa:	d0eb      	beq.n	294d4 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0xec>
+
+    _ZNK3etl8delegateIFvRN7storage10StorageJobEEEclIJS3_EEEvDpOT_():
+
+       294fc:	4621      	mov	r1, r4
+
+       294fe:	f104 0028 	add.w	r0, r4, #40	@ 0x28
+
+       29502:	4790      	blx	r2
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE22valueless_by_exceptionEv():
+
+       29504:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+
+       29506:	e7e5      	b.n	294d4 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0xec>
+
+    _ZN3etl4spanIhLj4294967295EEC4ERKS1_():
+
+       29508:	9203      	str	r2, [sp, #12]
+
+    storage::EepStorage::process(storage::StorageJob&):
+
+       2950a:	ad07      	add	r5, sp, #28
+
+       2950c:	aa02      	add	r2, sp, #8
+
+       2950e:	9100      	str	r1, [sp, #0]
+
+       29510:	9201      	str	r2, [sp, #4]
+
+       29512:	4601      	mov	r1, r0
+
+       29514:	4622      	mov	r2, r4
+
+       29516:	4628      	mov	r0, r5
+
+    _ZN3etl4spanIhLj4294967295EEC4ERKS1_():
+
+       29518:	9702      	str	r7, [sp, #8]
+
+    storage::EepStorage::process(storage::StorageJob&):
+
+       2951a:	f7ff fed3 	bl	292c4 <<a href="./60b47a2f003c7197381655cebddda8bf.html">storage::EepStorage::read(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSEOS8_():
+
+       2951e:	9b06      	ldr	r3, [sp, #24]
+
+       29520:	3301      	adds	r3, #1
+
+       29522:	d004      	beq.n	2952e <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x146>
+
+       29524:	9b05      	ldr	r3, [sp, #20]
+
+       29526:	2200      	movs	r2, #0
+
+       29528:	4630      	mov	r0, r6
+
+       2952a:	a904      	add	r1, sp, #16
+
+       2952c:	4798      	blx	r3
+
+       2952e:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+
+       29530:	1c5a      	adds	r2, r3, #1
+
+       29532:	d036      	beq.n	295a2 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x1ba>
+
+       29534:	9b08      	ldr	r3, [sp, #32]
+
+       29536:	9305      	str	r3, [sp, #20]
+
+       29538:	ae04      	add	r6, sp, #16
+
+       2953a:	462a      	mov	r2, r5
+
+       2953c:	4631      	mov	r1, r6
+
+       2953e:	2001      	movs	r0, #1
+
+       29540:	4798      	blx	r3
+
+       29542:	9b09      	ldr	r3, [sp, #36]	@ 0x24
+
+       29544:	9306      	str	r3, [sp, #24]
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEED4Ev():
+
+       29546:	3301      	adds	r3, #1
+
+       29548:	d02f      	beq.n	295aa <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x1c2>
+
+       2954a:	9b08      	ldr	r3, [sp, #32]
+
+       2954c:	2200      	movs	r2, #0
+
+       2954e:	4629      	mov	r1, r5
+
+       29550:	2002      	movs	r0, #2
+
+       29552:	4798      	blx	r3
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       29554:	9a06      	ldr	r2, [sp, #24]
+
+       29556:	9b05      	ldr	r3, [sp, #20]
+
+       29558:	9209      	str	r2, [sp, #36]	@ 0x24
+
+       2955a:	3201      	adds	r2, #1
+
+       2955c:	9308      	str	r3, [sp, #32]
+
+       2955e:	f47f af6b 	bne.w	29438 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x50>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSERKS8_():
+
+       29562:	6923      	ldr	r3, [r4, #16]
+
+       29564:	3301      	adds	r3, #1
+
+       29566:	f47f af6e 	bne.w	29446 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x5e>
+
+    _ZNK3etl8delegateIFvRN7storage10StorageJobEEE8is_validEv():
+
+       2956a:	6ae2      	ldr	r2, [r4, #44]	@ 0x2c
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSERKS8_():
+
+       2956c:	f04f 33ff 	mov.w	r3, #4294967295	@ 0xffffffff
+
+       29570:	6123      	str	r3, [r4, #16]
+
+    _ZN7storage10StorageJob10sendResultEN3etl7variantIJNS0_6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEE():
+
+       29572:	2a00      	cmp	r2, #0
+
+       29574:	f47f af7c 	bne.w	29470 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x88>
+
+       29578:	e786      	b.n	29488 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0xa0>
+
+    _ZN3etl4spanIhLj4294967295EEC4ERKS1_():
+
+       2957a:	9203      	str	r2, [sp, #12]
+
+    storage::EepStorage::process(storage::StorageJob&):
+
+       2957c:	ad07      	add	r5, sp, #28
+
+       2957e:	aa02      	add	r2, sp, #8
+
+       29580:	9100      	str	r1, [sp, #0]
+
+       29582:	9201      	str	r2, [sp, #4]
+
+       29584:	4601      	mov	r1, r0
+
+       29586:	4622      	mov	r2, r4
+
+       29588:	4628      	mov	r0, r5
+
+    _ZN3etl4spanIhLj4294967295EEC4ERKS1_():
+
+       2958a:	9702      	str	r7, [sp, #8]
+
+    storage::EepStorage::process(storage::StorageJob&):
+
+       2958c:	f7ff fdb8 	bl	29100 <<a href="./fb54102582fbd6b4856b35408dbf6c98.html">storage::EepStorage::write(storage::StorageJob&, storage::EepBlockConfig const&, unsigned int, etl::span<unsigned char, 4294967295u>)</a>>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSEOS8_():
+
+       29590:	9b06      	ldr	r3, [sp, #24]
+
+       29592:	3301      	adds	r3, #1
+
+       29594:	d0cb      	beq.n	2952e <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x146>
+
+       29596:	9b05      	ldr	r3, [sp, #20]
+
+       29598:	2200      	movs	r2, #0
+
+       2959a:	a904      	add	r1, sp, #16
+
+       2959c:	2002      	movs	r0, #2
+
+       2959e:	4798      	blx	r3
+
+       295a0:	e7c5      	b.n	2952e <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x146>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       295a2:	9a05      	ldr	r2, [sp, #20]
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEaSEOS8_():
+
+       295a4:	9306      	str	r3, [sp, #24]
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       295a6:	9208      	str	r2, [sp, #32]
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE22valueless_by_exceptionEv():
+
+       295a8:	e7db      	b.n	29562 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x17a>
+
+    _ZN3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEEC4ERKS8_():
+
+       295aa:	9b05      	ldr	r3, [sp, #20]
+
+       295ac:	9308      	str	r3, [sp, #32]
+
+    _ZNK3etl7variantIJN7storage10StorageJob6Result4InitENS3_5ErrorENS3_8DataLossENS3_7SuccessEEE22valueless_by_exceptionEv():
+
+       295ae:	e7d8      	b.n	29562 <<a href="./33d6fb1375314aad1b9d63dfc50e5311.html">storage::EepStorage::process(storage::StorageJob&)</a>+0x17a>
+
+       295b0:	0000db2d 	.word	0x0000db2d
+
+    </pre>
+
+    
+    <pre><a href="../StorageTester.cpp/6d3cbd9b6bd297c5fd32cd53d8f37bdc.html">storage::StorageTester::getInfo() const (8)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 160</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 552</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    160
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    552
+                    
+                    
+                </td>
+                <td class="col_size">100</td>
+                <td><a href="./648e573350541451df8dbd5ef7adb4ab.html" class="icon-function">(anonymous namespace)::isCrcValid(etl::span&lt;unsigned char const, 4294967295u&gt;, unsigned char const*)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    136
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                72 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">452</td>
+                <td><a href="./fb54102582fbd6b4856b35408dbf6c98.html" class="icon-function">storage::EepStorage::write(storage::StorageJob&amp;, storage::EepBlockConfig const&amp;, unsigned int, etl::span&lt;unsigned char, 4294967295u&gt;)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">64
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+            <p>No callers for this function.</p>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

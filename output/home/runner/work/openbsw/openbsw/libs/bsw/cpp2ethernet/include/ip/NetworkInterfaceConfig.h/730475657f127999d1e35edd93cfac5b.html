@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../cpp2ethernet.html">cpp2ethernet</a></li>
+        
+        <li><a href="../../../include.html">include</a></li>
+        
+        <li ><a href="../../ip.html">ip</a>
+            </li>
+
+        
+        <li class="active"><a href="../NetworkInterfaceConfig.h.html">NetworkInterfaceConfig.h</a>:205
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">ip::declare::NetworkInterfaceConfigRegistry&lt;2u&gt;::connect(etl::delegate&lt;void (unsigned char, ip::NetworkInterfaceConfig const&amp;)&gt; const&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00009704</td>
+                <td>
+    
+    
+</td>
+                <td>24 (static)</td>
+                <td>96</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="../../../../../../executables/referenceApp/application/src/systems/EthernetSystem.cpp/4277c0ded502c95f32b81e1ab92d793b.html">systems::EthernetSystem::shutdown() (56)</a></pre>
+    
+
+    <pre>
+
+    ip::declare::NetworkInterfaceConfigRegistry<2u>::connect(etl::delegate<void (unsigned char, ip::NetworkInterfaceConfig const&)> const&):
+
+        9704:	b570      	push	{r4, r5, r6, lr}
+
+    _ZNK3etl6signalIFvhRKN2ip22NetworkInterfaceConfigEELj2ENS_8delegateIS5_EEE3endEv():
+
+        9706:	6a44      	ldr	r4, [r0, #36]	@ 0x24
+
+    _ZNK3etl6signalIFvhRKN2ip22NetworkInterfaceConfigEELj2ENS_8delegateIS5_EEE5beginEv():
+
+        9708:	f100 0e14 	add.w	lr, r0, #20
+
+    _ZN3etl7find_ifIPKNS_8delegateIFvhRKN2ip22NetworkInterfaceConfigEEEEZNKS_6signalIS6_Lj2ES7_E9connectedERS8_EUlSC_E_EET_SE_SE_T0_():
+
+        970c:	45a6      	cmp	lr, r4
+
+    ip::declare::NetworkInterfaceConfigRegistry<2u>::connect(etl::delegate<void (unsigned char, ip::NetworkInterfaceConfig const&)> const&):
+
+        970e:	b082      	sub	sp, #8
+
+        9710:	4684      	mov	ip, r0
+
+    _ZN3etl7find_ifIPKNS_8delegateIFvhRKN2ip22NetworkInterfaceConfigEEEEZNKS_6signalIS6_Lj2ES7_E9connectedERS8_EUlSC_E_EET_SE_SE_T0_():
+
+        9712:	d016      	beq.n	9742 <<a href="./730475657f127999d1e35edd93cfac5b.html">ip::declare::NetworkInterfaceConfigRegistry<2u>::connect(etl::delegate<void (unsigned char, ip::NetworkInterfaceConfig const&)> const&)</a>+0x3e>
+
+    _ZNK3etl8delegateIFvhRKN2ip22NetworkInterfaceConfigEEE18invocation_elementeqERKS7_():
+
+        9714:	684d      	ldr	r5, [r1, #4]
+
+        9716:	4673      	mov	r3, lr
+
+        9718:	e002      	b.n	9720 <<a href="./730475657f127999d1e35edd93cfac5b.html">ip::declare::NetworkInterfaceConfigRegistry<2u>::connect(etl::delegate<void (unsigned char, ip::NetworkInterfaceConfig const&)> const&)</a>+0x1c>
+
+    _ZN3etl7find_ifIPKNS_8delegateIFvhRKN2ip22NetworkInterfaceConfigEEEEZNKS_6signalIS6_Lj2ES7_E9connectedERS8_EUlSC_E_EET_SE_SE_T0_():
+
+        971a:	3308      	adds	r3, #8
+
+        971c:	429c      	cmp	r4, r3
+
+        971e:	d00b      	beq.n	9738 <<a href="./730475657f127999d1e35edd93cfac5b.html">ip::declare::NetworkInterfaceConfigRegistry<2u>::connect(etl::delegate<void (unsigned char, ip::NetworkInterfaceConfig const&)> const&)</a>+0x34>
+
+    _ZNK3etl8delegateIFvhRKN2ip22NetworkInterfaceConfigEEE18invocation_elementeqERKS7_():
+
+        9720:	685a      	ldr	r2, [r3, #4]
+
+        9722:	4295      	cmp	r5, r2
+
+        9724:	d1f9      	bne.n	971a <<a href="./730475657f127999d1e35edd93cfac5b.html">ip::declare::NetworkInterfaceConfigRegistry<2u>::connect(etl::delegate<void (unsigned char, ip::NetworkInterfaceConfig const&)> const&)</a>+0x16>
+
+        9726:	681a      	ldr	r2, [r3, #0]
+
+        9728:	6808      	ldr	r0, [r1, #0]
+
+        972a:	4290      	cmp	r0, r2
+
+        972c:	d1f5      	bne.n	971a <<a href="./730475657f127999d1e35edd93cfac5b.html">ip::declare::NetworkInterfaceConfigRegistry<2u>::connect(etl::delegate<void (unsigned char, ip::NetworkInterfaceConfig const&)> const&)</a>+0x16>
+
+    _ZN3etl6signalIFvhRKN2ip22NetworkInterfaceConfigEELj2ENS_8delegateIS5_EEE7connectERKS7_():
+
+        972e:	429c      	cmp	r4, r3
+
+        9730:	d002      	beq.n	9738 <<a href="./730475657f127999d1e35edd93cfac5b.html">ip::declare::NetworkInterfaceConfigRegistry<2u>::connect(etl::delegate<void (unsigned char, ip::NetworkInterfaceConfig const&)> const&)</a>+0x34>
+
+        9732:	2001      	movs	r0, #1
+
+    ip::declare::NetworkInterfaceConfigRegistry<2u>::connect(etl::delegate<void (unsigned char, ip::NetworkInterfaceConfig const&)> const&):
+
+        9734:	b002      	add	sp, #8
+
+        9736:	bd70      	pop	{r4, r5, r6, pc}
+
+    _ZN3etl15distance_helperIPKNS_8delegateIFvhRKN2ip22NetworkInterfaceConfigEEEEEENS_15iterator_traitsIT_NS_9enable_ifIXntsrNS_14is_fundamentalISB_EE5valueEvE4typeEE15difference_typeESB_SB_NS_26random_access_iterator_tagE():
+
+        9738:	eba4 0e0e 	sub.w	lr, r4, lr
+
+    _ZN3etl6signalIFvhRKN2ip22NetworkInterfaceConfigEELj2ENS_8delegateIS5_EEE7connectERKS7_():
+
+        973c:	f1be 0f10 	cmp.w	lr, #16
+
+        9740:	d007      	beq.n	9752 <<a href="./730475657f127999d1e35edd93cfac5b.html">ip::declare::NetworkInterfaceConfigRegistry<2u>::connect(etl::delegate<void (unsigned char, ip::NetworkInterfaceConfig const&)> const&)</a>+0x4e>
+
+    _ZN3etl6signalIFvhRKN2ip22NetworkInterfaceConfigEELj2ENS_8delegateIS5_EEE11append_slotERKS7_():
+
+        9742:	c903      	ldmia	r1, {r0, r1}
+
+    _ZN3etl14advance_helperIPNS_8delegateIFvhRKN2ip22NetworkInterfaceConfigEEEEiEEvRT_T0_NS_26random_access_iterator_tagE():
+
+        9744:	f104 0308 	add.w	r3, r4, #8
+
+    _ZN3etl6signalIFvhRKN2ip22NetworkInterfaceConfigEELj2ENS_8delegateIS5_EEE11append_slotERKS7_():
+
+        9748:	e884 0003 	stmia.w	r4, {r0, r1}
+
+        974c:	f8cc 3024 	str.w	r3, [ip, #36]	@ 0x24
+
+        9750:	e7ef      	b.n	9732 <<a href="./730475657f127999d1e35edd93cfac5b.html">ip::declare::NetworkInterfaceConfigRegistry<2u>::connect(etl::delegate<void (unsigned char, ip::NetworkInterfaceConfig const&)> const&)</a>+0x2e>
+
+    _ZN3etl6signalIFvhRKN2ip22NetworkInterfaceConfigEELj2ENS_8delegateIS5_EEE7connectERKS7_():
+
+        9752:	4b03      	ldr	r3, [pc, #12]	@ (9760 <<a href="./730475657f127999d1e35edd93cfac5b.html">ip::declare::NetworkInterfaceConfigRegistry<2u>::connect(etl::delegate<void (unsigned char, ip::NetworkInterfaceConfig const&)> const&)</a>+0x5c>)
+
+        9754:	a801      	add	r0, sp, #4
+
+        9756:	681b      	ldr	r3, [r3, #0]
+
+        9758:	4798      	blx	r3
+
+        975a:	2000      	movs	r0, #0
+
+    ip::declare::NetworkInterfaceConfigRegistry<2u>::connect(etl::delegate<void (unsigned char, ip::NetworkInterfaceConfig const&)> const&):
+
+        975c:	b002      	add	sp, #8
+
+        975e:	bd70      	pop	{r4, r5, r6, pc}
+
+        9760:	1ffe0120 	.word	0x1ffe0120
+
+    </pre>
+
+    
+    <pre><a href="./6d5ddc351425e5304fa725e333c03929.html">ip::declare::NetworkInterfaceConfigRegistry&lt;2u&gt;::disconnect(etl::delegate&lt;void (unsigned char, ip::NetworkInterfaceConfig const&amp;)&gt; const&amp;) (100)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

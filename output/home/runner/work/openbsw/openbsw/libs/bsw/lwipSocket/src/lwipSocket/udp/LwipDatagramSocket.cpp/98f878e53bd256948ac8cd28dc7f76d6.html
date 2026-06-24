@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../libs.html">libs</a></li>
+        
+        <li><a href="../../../../../../bsw.html">bsw</a></li>
+        
+        <li><a href="../../../../../lwipSocket.html">lwipSocket</a></li>
+        
+        <li><a href="../../../../src.html">src</a></li>
+        
+        <li><a href="../../../lwipSocket.html">lwipSocket</a></li>
+        
+        <li ><a href="../../udp.html">udp</a>
+            </li>
+
+        
+        <li class="active"><a href="../LwipDatagramSocket.cpp.html">LwipDatagramSocket.cpp</a>:75
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">udp::LwipDatagramSocket::isClosed() const</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x0001aa44</td>
+                <td>
+    
+    
+</td>
+                <td>8 (static)</td>
+                <td>68</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>No Callers</th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    No Callees
+                    
+                </th>
+                <td colspan="5">
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./a5b3868dbf402d0847a9b83abb2bc0b5.html">udp::LwipDatagramSocket::noChksum(bool) (52)</a></pre>
+    
+
+    <pre>
+
+    udp::LwipDatagramSocket::isClosed() const():
+
+       1aa44:	6803      	ldr	r3, [r0, #0]
+
+       1aa46:	490e      	ldr	r1, [pc, #56]	@ (1aa80 <<a href="./98f878e53bd256948ac8cd28dc7f76d6.html">udp::LwipDatagramSocket::isClosed() const</a>+0x3c>)
+
+       1aa48:	689a      	ldr	r2, [r3, #8]
+
+       1aa4a:	428a      	cmp	r2, r1
+
+       1aa4c:	b510      	push	{r4, lr}
+
+       1aa4e:	4604      	mov	r4, r0
+
+       1aa50:	d103      	bne.n	1aa5a <<a href="./98f878e53bd256948ac8cd28dc7f76d6.html">udp::LwipDatagramSocket::isClosed() const</a>+0x16>
+
+       1aa52:	68c2      	ldr	r2, [r0, #12]
+
+       1aa54:	b92a      	cbnz	r2, 1aa62 <<a href="./98f878e53bd256948ac8cd28dc7f76d6.html">udp::LwipDatagramSocket::isClosed() const</a>+0x1e>
+
+       1aa56:	2001      	movs	r0, #1
+
+       1aa58:	bd10      	pop	{r4, pc}
+
+       1aa5a:	4790      	blx	r2
+
+       1aa5c:	2800      	cmp	r0, #0
+
+       1aa5e:	d0fa      	beq.n	1aa56 <<a href="./98f878e53bd256948ac8cd28dc7f76d6.html">udp::LwipDatagramSocket::isClosed() const</a>+0x12>
+
+       1aa60:	6823      	ldr	r3, [r4, #0]
+
+       1aa62:	69db      	ldr	r3, [r3, #28]
+
+       1aa64:	4a07      	ldr	r2, [pc, #28]	@ (1aa84 <<a href="./98f878e53bd256948ac8cd28dc7f76d6.html">udp::LwipDatagramSocket::isClosed() const</a>+0x40>)
+
+       1aa66:	4293      	cmp	r3, r2
+
+       1aa68:	d107      	bne.n	1aa7a <<a href="./98f878e53bd256948ac8cd28dc7f76d6.html">udp::LwipDatagramSocket::isClosed() const</a>+0x36>
+
+    udp::LwipDatagramSocket::isConnected() const():
+
+       1aa6a:	6920      	ldr	r0, [r4, #16]
+
+       1aa6c:	3800      	subs	r0, #0
+
+       1aa6e:	bf18      	it	ne
+
+       1aa70:	2001      	movne	r0, #1
+
+    udp::LwipDatagramSocket::isClosed() const():
+
+       1aa72:	f080 0001 	eor.w	r0, r0, #1
+
+       1aa76:	b2c0      	uxtb	r0, r0
+
+       1aa78:	bd10      	pop	{r4, pc}
+
+       1aa7a:	4620      	mov	r0, r4
+
+       1aa7c:	4798      	blx	r3
+
+       1aa7e:	e7f8      	b.n	1aa72 <<a href="./98f878e53bd256948ac8cd28dc7f76d6.html">udp::LwipDatagramSocket::isClosed() const</a>+0x2e>
+
+       1aa80:	0001a8f5 	.word	0x0001a8f5
+
+       1aa84:	0001a901 	.word	0x0001a901
+
+    </pre>
+
+    
+    <pre><a href="../../../../../cpp2ethernet/include/ip/IPAddress.h/015b01c98a9138d13626764bf1adb5ab.html">ip::addressFamilyOf(ip::IPAddress const&amp;) (140)</a></pre>
+    
+
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>

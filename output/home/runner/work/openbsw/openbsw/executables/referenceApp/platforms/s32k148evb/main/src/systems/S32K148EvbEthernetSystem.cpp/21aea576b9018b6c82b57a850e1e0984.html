@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../../../../../../../../../../../static/css/style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Symbol - puncover</title>
+    
+</head>
+<body>
+    <div class="container" id="content">
+        <div class="page-header">
+            <nav class="navbar navbar-default" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="../../../../../../../../../../../../../index.html">
+                    Puncover
+                  </a>
+                </div>
+              </div>
+            </nav>
+          
+        </div>
+        <div id="inner_content">
+        
+    
+    <ol class="breadcrumb folders">
+        
+        <li><a href="../../../../../../../../../../../../../home.html">home</a></li>
+        
+        <li><a href="../../../../../../../../../../../../runner.html">runner</a></li>
+        
+        <li><a href="../../../../../../../../../../../work.html">work</a></li>
+        
+        <li><a href="../../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../../openbsw.html">openbsw</a></li>
+        
+        <li><a href="../../../../../../../../executables.html">executables</a></li>
+        
+        <li><a href="../../../../../../../referenceApp.html">referenceApp</a></li>
+        
+        <li><a href="../../../../../../platforms.html">platforms</a></li>
+        
+        <li><a href="../../../../../s32k148evb.html">s32k148evb</a></li>
+        
+        <li><a href="../../../../main.html">main</a></li>
+        
+        <li><a href="../../../src.html">src</a></li>
+        
+        <li ><a href="../../systems.html">systems</a>
+            </li>
+
+        
+        <li class="active"><a href="../S32K148EvbEthernetSystem.cpp.html">S32K148EvbEthernetSystem.cpp</a>:91
+            </li>
+        
+    </ol>
+
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Function</th>
+                <td colspan="5">
+                    <span class="icon-function">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&amp;)</span>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="2"></th>
+                <th>Address</th>
+                <th>Remarks</th>
+                <th>Stack</th>
+                <th>Code</th>
+                <th>Static</th>
+            </tr>
+            <tr>
+                <td>0x00010bf4</td>
+                <td>
+    <span class="label label-success">x-module</span>
+    
+</td>
+                <td>24 (static)</td>
+                <td>312</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>Callers (1)</th>
+                <td colspan="5">
+                
+                    <a href="../../main.cpp/97ca1c6b6c6550542b317e127d620f42.html">platform::platformLifecycleAdd(lifecycle::LifecycleManager&amp;, unsigned char) (208)</a>
+                    
+                
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Callees (8,
+                            <span title="sum of used bytes by all callees">
+                            Σ=352
+                            </span>
+                        )
+                    
+                </th>
+                <td colspan="5">
+                
+                    <a href="../../../../../../../../libs/bsw/lifecycle/src/lifecycle/AsyncLifecycleComponent.cpp/5638605dc31aa5d230e8332768d97969.html">lifecycle::AsyncLifecycleComponent::AsyncLifecycleComponent() (28)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../libs/bsw/asyncFreeRtos/src/async/Types.cpp/fcb4700f830501fb36a46bee82cc2f7d.html">async::TimeoutType::TimeoutType() (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset (16)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../platforms/s32k1xx/bsp/bspEthernet/src/ethernet/EnetDriver.cpp/71aabc8e7364b67d04cc50d0eee285d4.html">ethernet::EnetDriver::EnetDriver(etl::array&lt;unsigned char, 6u&gt;, ethernet::EnetDriver::Configuration const&amp;) (184)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/4930b53e964e70972fe82824abfead6e.html">enetphy::Tja1101::Tja1101(enetphy::MdioTja1101&amp;, unsigned char) (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101Tester.cpp/43804bb57d30da2f58c54ae8f5a8bc79.html">enetphy::Tja1101Tester::Tja1101Tester(enetphy::Tja1101&amp;) (24)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../libs/bsw/asyncConsole/src/console/AsyncCommandWrapper.cpp/0d79e28394e5e6b1c4f868fcd5aee107.html">console::AsyncCommandWrapper::AsyncCommandWrapper(util::command::ICommand&amp;, unsigned char) (44)</a>
+                    
+                        ,
+                    
+                
+                    <a href="../../../../../../../../libs/bsw/lifecycle/src/lifecycle/AsyncLifecycleComponent.cpp/a5d9a6526d752afc14a56502cbf0f528.html">lifecycle::AsyncLifecycleComponent::setTransitionContext(unsigned char) (8)</a>
+                    
+                
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <pre><a href="./119ae36caac05f0a90b19eaf200f874d.html">enetTxIsr (16)</a></pre>
+    
+
+    <pre>
+
+    _ZN7systems24S32K148EvbEthernetSystemC2EhRN9lifecycle17ILifecycleManagerE():
+
+       10bf4:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+
+    _ZN8ethernet21IEthernetDriverSystemC4Ev():
+
+       10bf8:	4a3e      	ldr	r2, [pc, #248]	@ (10cf4 <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x100>)
+
+    _ZN5async9IRunnableC4Ev():
+
+       10bfa:	4b3f      	ldr	r3, [pc, #252]	@ (10cf8 <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x104>)
+
+    _ZN8ethernet21IEthernetDriverSystemC4Ev():
+
+       10bfc:	6002      	str	r2, [r0, #0]
+
+    _ZN5async9QueueNodeINS_9IRunnableEEC4Ev():
+
+       10bfe:	f04f 0801 	mov.w	r8, #1
+
+    _ZN7systems24S32K148EvbEthernetSystemC2EhRN9lifecycle17ILifecycleManagerE():
+
+       10c02:	f100 070c 	add.w	r7, r0, #12
+
+       10c06:	4604      	mov	r4, r0
+
+    _ZN5async9QueueNodeINS_9IRunnableEEC4Ev():
+
+       10c08:	f8c0 8008 	str.w	r8, [r0, #8]
+
+    _ZN5async9IRunnableC4Ev():
+
+       10c0c:	6043      	str	r3, [r0, #4]
+
+    _ZN7systems24S32K148EvbEthernetSystemC2EhRN9lifecycle17ILifecycleManagerE():
+
+       10c0e:	4638      	mov	r0, r7
+
+       10c10:	460d      	mov	r5, r1
+
+       10c12:	f7fd fb95 	bl	e340 <<a href="../../../../../../../../libs/bsw/lifecycle/src/lifecycle/AsyncLifecycleComponent.cpp/5638605dc31aa5d230e8332768d97969.html">lifecycle::AsyncLifecycleComponent::AsyncLifecycleComponent()</a>>
+
+       10c16:	4b39      	ldr	r3, [pc, #228]	@ (10cfc <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x108>)
+
+       10c18:	6023      	str	r3, [r4, #0]
+
+       10c1a:	f103 0228 	add.w	r2, r3, #40	@ 0x28
+
+       10c1e:	3334      	adds	r3, #52	@ 0x34
+
+       10c20:	6062      	str	r2, [r4, #4]
+
+       10c22:	60e3      	str	r3, [r4, #12]
+
+       10c24:	75e5      	strb	r5, [r4, #23]
+
+       10c26:	f104 0018 	add.w	r0, r4, #24
+
+       10c2a:	f002 f999 	bl	12f60 <<a href="../../../../../../../../libs/bsw/asyncFreeRtos/src/async/Types.cpp/fcb4700f830501fb36a46bee82cc2f7d.html">async::TimeoutType::TimeoutType()</a>>
+
+    _ZN5async4CallIN3etl8delegateIFvvEEEEC4Ev():
+
+       10c2e:	4b34      	ldr	r3, [pc, #208]	@ (10d00 <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x10c>)
+
+       10c30:	6323      	str	r3, [r4, #48]	@ 0x30
+
+    _ZN3etl8delegateIFvvEE18invocation_element8ptr_typeC4EPv():
+
+       10c32:	2600      	movs	r6, #0
+
+    _ZN7systems24S32K148EvbEthernetSystemC2EhRN9lifecycle17ILifecycleManagerE():
+
+       10c34:	f104 0340 	add.w	r3, r4, #64	@ 0x40
+
+    _ZN5async9QueueNodeINS_9IRunnableEEC4Ev():
+
+       10c38:	f8c4 8034 	str.w	r8, [r4, #52]	@ 0x34
+
+    _ZN7systems24S32K148EvbEthernetSystemC2EhRN9lifecycle17ILifecycleManagerE():
+
+       10c3c:	4631      	mov	r1, r6
+
+    _ZN3etl8delegateIFvvEE18invocation_element8ptr_typeC4EPv():
+
+       10c3e:	63a6      	str	r6, [r4, #56]	@ 0x38
+
+    _ZN3etl8delegateIFvvEE18invocation_elementC4Ev():
+
+       10c40:	63e6      	str	r6, [r4, #60]	@ 0x3c
+
+    _ZN7systems24S32K148EvbEthernetSystemC2EhRN9lifecycle17ILifecycleManagerE():
+
+       10c42:	2248      	movs	r2, #72	@ 0x48
+
+       10c44:	4618      	mov	r0, r3
+
+       10c46:	f7ef fcb8 	bl	5ba <<a href="../../../../../../../../../../../../../unknown/unknown/716af30655f8f3d9b32750dca746ddfb.html">memset</a>>
+
+       10c4a:	4a2e      	ldr	r2, [pc, #184]	@ (10d04 <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x110>)
+
+       10c4c:	64a2      	str	r2, [r4, #72]	@ 0x48
+
+       10c4e:	f502 7200 	add.w	r2, r2, #512	@ 0x200
+
+       10c52:	64e2      	str	r2, [r4, #76]	@ 0x4c
+
+       10c54:	4a2c      	ldr	r2, [pc, #176]	@ (10d08 <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x114>)
+
+       10c56:	6522      	str	r2, [r4, #80]	@ 0x50
+
+       10c58:	f502 72e0 	add.w	r2, r2, #448	@ 0x1c0
+
+       10c5c:	6562      	str	r2, [r4, #84]	@ 0x54
+
+       10c5e:	4a2b      	ldr	r2, [pc, #172]	@ (10d0c <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x118>)
+
+       10c60:	65a2      	str	r2, [r4, #88]	@ 0x58
+
+       10c62:	3240      	adds	r2, #64	@ 0x40
+
+       10c64:	65e2      	str	r2, [r4, #92]	@ 0x5c
+
+       10c66:	4a2a      	ldr	r2, [pc, #168]	@ (10d10 <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x11c>)
+
+       10c68:	6622      	str	r2, [r4, #96]	@ 0x60
+
+       10c6a:	f502 5280 	add.w	r2, r2, #4096	@ 0x1000
+
+       10c6e:	6662      	str	r2, [r4, #100]	@ 0x64
+
+       10c70:	4a28      	ldr	r2, [pc, #160]	@ (10d14 <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x120>)
+
+       10c72:	66a2      	str	r2, [r4, #104]	@ 0x68
+
+       10c74:	f502 6280 	add.w	r2, r2, #1024	@ 0x400
+
+       10c78:	66e2      	str	r2, [r4, #108]	@ 0x6c
+
+       10c7a:	4a27      	ldr	r2, [pc, #156]	@ (10d18 <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x124>)
+
+       10c7c:	6722      	str	r2, [r4, #112]	@ 0x70
+
+       10c7e:	3280      	adds	r2, #128	@ 0x80
+
+       10c80:	6762      	str	r2, [r4, #116]	@ 0x74
+
+       10c82:	4a26      	ldr	r2, [pc, #152]	@ (10d1c <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x128>)
+
+       10c84:	67a2      	str	r2, [r4, #120]	@ 0x78
+
+       10c86:	3220      	adds	r2, #32
+
+       10c88:	67e2      	str	r2, [r4, #124]	@ 0x7c
+
+       10c8a:	4a25      	ldr	r2, [pc, #148]	@ (10d20 <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x12c>)
+
+       10c8c:	f8c4 2080 	str.w	r2, [r4, #128]	@ 0x80
+
+       10c90:	f502 7220 	add.w	r2, r2, #640	@ 0x280
+
+       10c94:	f8c4 2084 	str.w	r2, [r4, #132]	@ 0x84
+
+       10c98:	211e      	movs	r1, #30
+
+       10c9a:	4a22      	ldr	r2, [pc, #136]	@ (10d24 <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x130>)
+
+       10c9c:	6421      	str	r1, [r4, #64]	@ 0x40
+
+       10c9e:	f44f 7180 	mov.w	r1, #256	@ 0x100
+
+       10ca2:	4603      	mov	r3, r0
+
+       10ca4:	f8a4 1044 	strh.w	r1, [r4, #68]	@ 0x44
+
+       10ca8:	f104 0088 	add.w	r0, r4, #136	@ 0x88
+
+       10cac:	ca06      	ldmia	r2, {r1, r2}
+
+       10cae:	f01c f969 	bl	2cf84 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspEthernet/src/ethernet/EnetDriver.cpp/71aabc8e7364b67d04cc50d0eee285d4.html">ethernet::EnetDriver::EnetDriver(etl::array<unsigned char, 6u>, ethernet::EnetDriver::Configuration const&)</a>>
+
+       10cb2:	f504 7888 	add.w	r8, r4, #272	@ 0x110
+
+    _ZN7enetphy11MdioTja1101C4ERKNS_9PhyConfigE():
+
+       10cb6:	4b1c      	ldr	r3, [pc, #112]	@ (10d28 <<a href="./21aea576b9018b6c82b57a850e1e0984.html">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&)</a>+0x134>)
+
+       10cb8:	f8c4 310c 	str.w	r3, [r4, #268]	@ 0x10c
+
+    _ZN7systems24S32K148EvbEthernetSystemC2EhRN9lifecycle17ILifecycleManagerE():
+
+       10cbc:	4632      	mov	r2, r6
+
+       10cbe:	f504 7186 	add.w	r1, r4, #268	@ 0x10c
+
+       10cc2:	4640      	mov	r0, r8
+
+       10cc4:	f01b f846 	bl	2bd54 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101.cpp/4930b53e964e70972fe82824abfead6e.html">enetphy::Tja1101::Tja1101(enetphy::MdioTja1101&, unsigned char)</a>>
+
+       10cc8:	4641      	mov	r1, r8
+
+       10cca:	f504 788e 	add.w	r8, r4, #284	@ 0x11c
+
+       10cce:	4640      	mov	r0, r8
+
+       10cd0:	f01b f8d2 	bl	2be78 <<a href="../../../../../../../../platforms/s32k1xx/bsp/bspTja1101/src/phy/Tja1101Tester.cpp/43804bb57d30da2f58c54ae8f5a8bc79.html">enetphy::Tja1101Tester::Tja1101Tester(enetphy::Tja1101&)</a>>
+
+       10cd4:	462a      	mov	r2, r5
+
+       10cd6:	4641      	mov	r1, r8
+
+       10cd8:	f504 7094 	add.w	r0, r4, #296	@ 0x128
+
+       10cdc:	f7fd f8fe 	bl	dedc <<a href="../../../../../../../../libs/bsw/asyncConsole/src/console/AsyncCommandWrapper.cpp/0d79e28394e5e6b1c4f868fcd5aee107.html">console::AsyncCommandWrapper::AsyncCommandWrapper(util::command::ICommand&, unsigned char)</a>>
+
+       10ce0:	4638      	mov	r0, r7
+
+       10ce2:	f884 614c 	strb.w	r6, [r4, #332]	@ 0x14c
+
+       10ce6:	4629      	mov	r1, r5
+
+       10ce8:	f7fd fb38 	bl	e35c <<a href="../../../../../../../../libs/bsw/lifecycle/src/lifecycle/AsyncLifecycleComponent.cpp/a5d9a6526d752afc14a56502cbf0f528.html">lifecycle::AsyncLifecycleComponent::setTransitionContext(unsigned char)</a>>
+
+       10cec:	4620      	mov	r0, r4
+
+       10cee:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+
+       10cf2:	bf00      	nop
+
+       10cf4:	0003654c 	.word	0x0003654c
+
+       10cf8:	00036540 	.word	0x00036540
+
+       10cfc:	00036570 	.word	0x00036570
+
+       10d00:	00036564 	.word	0x00036564
+
+       10d04:	1fff3200 	.word	0x1fff3200
+
+       10d08:	1fff2040 	.word	0x1fff2040
+
+       10d0c:	1fff1fc8 	.word	0x1fff1fc8
+
+       10d10:	1fff2200 	.word	0x1fff2200
+
+       10d14:	1fff3400 	.word	0x1fff3400
+
+       10d18:	1fff1f48 	.word	0x1fff1f48
+
+       10d1c:	1fff1f28 	.word	0x1fff1f28
+
+       10d20:	1fff1ca8 	.word	0x1fff1ca8
+
+       10d24:	000365bc 	.word	0x000365bc
+
+       10d28:	000365c4 	.word	0x000365c4
+
+    </pre>
+
+    
+    <pre><a href="./fda529325872b1bf96cd2a06ddd093b8.html">_GLOBAL__sub_I_enetRxIsr (28)</a></pre>
+    
+
+    
+        <h1>Stack Worst-Case Scenarios</h1>
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 204</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 416</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    204
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                20 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    416
+                    
+                    
+                </td>
+                <td class="col_size">76</td>
+                <td><a href="../../../../../../../../libs/bsw/util/src/util/string/ConstString.cpp/da3f19b0834dcc2a495f1571acfa454d.html" class="icon-function">util::string::ConstString::compareIgnoreCase(util::string::ConstString const&amp;) const</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    184
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                48 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    340
+                    
+                    
+                </td>
+                <td class="col_size">220</td>
+                <td><a href="../../../../../../../../libs/bsw/util/src/util/command/ParentCommand.cpp/29f754d764c89bdd27dee4f5eb8a063d.html" class="icon-function">util::command::ParentCommand::addCommand_local(util::command::ICommand&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    120
+                    
+                    
+                </td>
+                <td class="col_size">4</td>
+                <td><a href="../../../../../../../../libs/bsw/util/src/util/command/ParentCommand.cpp/4a5f12c423b787f541d1c10602f30107.html" class="icon-function">util::command::ParentCommand::addCommand(util::command::ICommand&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>4</th>
+                <td class="col_size">
+                    
+                    136
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                16 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    116
+                    
+                    
+                </td>
+                <td class="col_size">72</td>
+                <td><a href="../../../../../../../../libs/bsw/asyncConsole/src/console/AsyncConsole.cpp/ef61218900d06da5c46cbd0f8215384b.html" class="icon-function">console::AsyncConsole::addCommand(util::command::ICommand&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>5</th>
+                <td class="col_size">
+                    
+                    120
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                8 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">44</td>
+                <td><a href="../../../../../../../../libs/bsw/asyncConsole/src/console/AsyncCommandWrapper.cpp/0d79e28394e5e6b1c4f868fcd5aee107.html" class="icon-function">console::AsyncCommandWrapper::AsyncCommandWrapper(util::command::ICommand&amp;, unsigned char)</a></td>
+            </tr>
+        
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th></th>
+                <th class="col_size">112
+                </th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+        
+        
+        <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th rowspan="2">#</th>
+                <th colspan="2" style="text-align: center">Stack</th>
+                <th colspan="2" style="text-align: center">Code</th>
+                <th rowspan="2" width="100%">Name</th>
+            </tr>
+            <tr>
+                <th class="col_size">&sum; = 112</th>
+                <th class="col_size"></th>
+                <th class="col_size">&sum;= 1,328</th>
+                <th class="col_size"></th>
+            </tr>
+        </thead>
+        <tbody>
+        
+            <tr>
+                <th>1</th>
+                <td class="col_size">
+                    
+                    112
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,328
+                    
+                    
+                </td>
+                <td class="col_size">312</td>
+                <td><a href="./21aea576b9018b6c82b57a850e1e0984.html" class="icon-function">systems::S32K148EvbEthernetSystem::S32K148EvbEthernetSystem(unsigned char, lifecycle::ILifecycleManager&amp;)</a></td>
+            </tr>
+        
+            <tr>
+                <th>2</th>
+                <td class="col_size">
+                    
+                    88
+                    
+                    
+                </td>
+                <td class="col_size">
+            
+                24 
+            
+                </td>
+                <td class="col_size">
+                    
+                    
+                    1,016
+                    
+                    
+                </td>
+                <td class="col_size">208</td>
+                <td><a href="../../main.cpp/97ca1c6b6c6550542b317e127d620f42.html" class="icon-function">platform::platformLifecycleAdd(lifecycle::LifecycleManager&amp;, unsigned char)</a></td>
+            </tr>
+        
+            <tr>
+                <th>3</th>
+                <td class="col_size">
+                </td>
+                <td class="col_size">
+            
+                64 
+            
+                </td>
+                <td class="col_size">
+                    
+                </td>
+                <td class="col_size">808</td>
+                <td><a href="../../../../../../application/src/app/app.cpp/4da5c80e94ffd100bf7197f59436fa02.html" class="icon-function">app::startApp()</a></td>
+            </tr>
+        
+        </tbody>
+        
+    </table>
+        
+    
+
+
+        </div>
+    <div id="page-footer">
+        <hr>
+        
+            brought to you with 💖
+            by <a href="https://twitter.com/hbehrens">Heiko Behrens</a>
+            <span class="secondary">– MIT license, copyright © 2014-2026</span>
+        
+    </div>
+    </div>
+</body>
+</html>
